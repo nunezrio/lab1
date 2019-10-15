@@ -1,0 +1,18 @@
+/* 1. All CSS is in a styles.css, which is linked in the head of the HTML file.
+2. “Open Sans” font is imported and applied successfully to all text on the page.
+3. The background color of the body should be set to #f9fafc.
+4. Navigation links are stacked vertically, as shown.
+5. Navigation links are gray (#69696a).
+6. Navigation links have no underline.
+7. Navigation links are still gray with no underline after clicking them (visited).
+8. “Hire Us” and “Scroll Down” are black (#FFF) with white (#000) text.
+9. “Hire Us” and “Scroll Down” have fully rounded ends.
+10. “Hire Us” and “Scroll Down” stretch across entire display (with some space between
+edges as shown).
+11. “Hire Us” and “Scroll Down” text is centered.
+12. Lorem, ipsum paragraph has the gray (#69696a) vertical bar on left. */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+  #f9fafc;
+}

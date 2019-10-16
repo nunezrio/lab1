@@ -13,34 +13,65 @@ edges as shown).
 12. Lorem, ipsum paragraph has the gray (#69696a) vertical bar on left. */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-body {
-  background-color: #f9fafc;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0 auto;
-  font-size: 1 em;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-h2 {
-  font-size: 2em;
+body {
+  background-color: #f9fafc;
+  font-family: 'Open Sans';
+  /* border: 1px solid magenta; */
+  font-size: 16px;
+  margin: 16px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 8px 0px;
 }
 
 a {
+  color: #69696a;
   text-decoration: none;
 }
 
-.nav-list {
-  list-style-type: none;
-  font-size: 1.2em;
-  padding: 0;
-}
-
-.nav-list a {
+a:visited {
   color: #69696a;
 }
 
-a.btn {
+.primary.button {
   color: #fff;
   background-color: #000;
+  border-radius: 48px;
+  width: 100;
+  display: block;
+  text-align: center;
+  padding: 8px 0px;
+}
+
+h2 {
+  font-size: 32px;
+  padding-top: 40px;
+}
+
+p {
+  color: #69696a;
+  border-left: 2px solid #69696a;
+  margin: 24px 0px;
+  padding-left: 16px;
+}
+
+.menu {
   display: flex;
-  align-content: center;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }

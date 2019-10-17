@@ -76,7 +76,6 @@ p {
   header {
     display: flex;
     flex-direction: row;
-    border: 1px solid magenta;
     align-items: baseline;
   }
 
@@ -103,7 +102,6 @@ p {
   .about {
     display: flex;
     flex-direction: column;
-    border: 1px solid magenta;
   }
 
   p {

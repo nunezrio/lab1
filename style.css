@@ -51,7 +51,7 @@ a:visited {
   background-color: #000;
   border-radius: 48px;
   width: 100%;
-  display: inline-block;
+  display: block;
   text-align: center;
   padding: 8px 0px;
 }
@@ -68,19 +68,51 @@ p {
   padding-left: 16px;
 }
 
-.menu {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-between;
-}
-
-.circles {
-  /* display: none; */
-}
-
 @media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid magenta;
+    align-items: baseline;
+  }
+
+  .company {
+    display: flex;
+    flex-grow: 3;
+  }
+
+  .menu {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  li {
+    padding: 0em 0.25em;
+  }
+
+  .hire.button {
+    padding: 0.5em 0.75em;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid magenta;
+  }
+
   p {
-    width: 50%;
+    width: 50vw;
+  }
+
+  .circles {
+    display: flex;
+    flex-direction: row;
   }
 
   .large-circle {
@@ -89,16 +121,24 @@ p {
     background-color: rgba(247, 136, 167, 0.6);
     border-radius: 50%;
   }
+
   .medium-circle {
     height: 50px;
     width: 50px;
     background-color: rgba(247, 193, 162, 0.7);
     border-radius: 50%;
   }
+
   .small-circle {
     height: 50px;
     width: 50px;
     background-color: rgba(207, 130, 213, 0.6);
     border-radius: 50%;
+  }
+
+  .scroll.button {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
   }
 }
